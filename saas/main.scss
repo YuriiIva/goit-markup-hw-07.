@@ -6,8 +6,22 @@
 @import './base/container';
 
 // ----------------
-@import './components/btn';
-
-
-
 @import './layout/header';
+@import './layout/hero';
+
+@import './components/btn';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/section-title';
+@import './components/section';
+@import './layout/peculiarities';
+@import './layout/clients';
+@import './components/social';
+@import './layout/works';
+@import './layout/team';
+@import './layout/gellery';
+@import './layout/connect';
+@import './layout/contact-wrap';
+
+
+@import './layout/footer';
