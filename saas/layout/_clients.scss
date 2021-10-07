@@ -17,20 +17,19 @@
     justify-content: center;
     align-items: center;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    border-color: var(--accent-color);
+    .clients-icon {
+    fill: var(--accent-color);
   }
+  }
+  }
+
   .clients-icon {
     fill: var(--icon-color);
     width: 106px;
     height: 60px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .clients:hover .clients-icon {
-    fill: var(--accent-color);
-  }
-  .clients:focus .clients-icon {
-    fill: var(--accent-color);
-  }
-  .clients:hover,
-  .clients:focus {
-    border-color: var(--accent-color);
-  }
+  
