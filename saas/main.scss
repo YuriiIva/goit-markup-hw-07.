@@ -4,16 +4,16 @@
 @import './base/common';
 @import './utils/hidden';
 @import './base/container';
+@import './components/btn';
+@import './components/backdrop';
+@import './components/section-title';
+@import './components/section';
 
 // ----------------
 @import './layout/header';
 @import './layout/hero';
-
-@import './components/btn';
-@import './components/backdrop';
 @import './components/modal';
-@import './components/section-title';
-@import './components/section';
+
 @import './layout/peculiarities';
 @import './layout/clients';
 @import './components/social';
