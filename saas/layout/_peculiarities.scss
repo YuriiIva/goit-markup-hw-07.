@@ -1,9 +1,12 @@
-.peculiarities-list {
-    display: flex;
-  }
+// .peculiarities-list {
+//     display: flex;
+    
+//   }
+
   .pecul-item:not(:last-child) {
     margin-right: 30px;
   }
+  
   .pecul-title {
     margin-bottom: 10px;
     font-size: 14px;
