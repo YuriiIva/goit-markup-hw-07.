@@ -877,13 +877,18 @@ body {
 }
 
 .futer-form-connect {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .futer-form-connect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .futer-label {
@@ -893,13 +898,17 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-white-color);
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .futer-label {
+    text-align: center;
+  }
+}
+
 .futer-form-email {
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -909,15 +918,37 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 320px) {
+  .futer-form-email {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .futer-form-email {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .futer-form-email {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+  }
+}
+
 .futer-form-connect > .btn-futer {
   width: 200px;
+  height: 50px;
   background: var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -926,10 +957,28 @@ body {
   position: relative;
 }
 
+@media screen and (min-width: 1200px) {
+  .futer-form-connect > .btn-futer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.form-futer-item {
+  position: relative;
+}
+
 .form-futer-icon {
   position: absolute;
-  right: 37px;
+  right: 32px;
   top: 13px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .form-futer-main {
+    text-align: center;
+  }
 }
 
 .modal-title {
@@ -1072,17 +1121,78 @@ body {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .futer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .futer-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .futer-logo {
   margin-bottom: 20px;
+  width: 154px;
+  height: 28px;
+  font-size: 24px;
+  line-height: 1.67;
+}
+
+@media screen and (min-width: 1200px) {
+  .futer-logo {
+    width: 145px;
+    height: 31px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .futer .address {
   color: var(--title-white-color);
   font-size: 14px;
   line-height: 1.71;
-  text-align: left;
   margin-bottom: 9px;
   margin-top: 20px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .futer .address {
+    text-align: left;
+  }
+}
+
+.futer-adrdess {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 320px) {
+  .futer-adrdess {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .futer-adrdess {
+    width: 232px;
+    height: 79px;
+  }
 }
 
 .futer .inf {
@@ -1091,7 +1201,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
-  text-align: left;
+}
+
+@media screen and (min-width: 1200px) {
+  .futer .inf {
+    text-align: left;
+  }
 }
 
 .futer-inf-mail {
@@ -1103,17 +1218,31 @@ body {
   display: block;
 }
 
-.futer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .futer-left {
+    text-align: center;
+  }
 }
 
-.futer-left {
-  margin-right: 70px;
+@media screen and (min-width: 320px) {
+  .futer-right {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .futer-right {
+    width: 206px;
+    height: 80px;
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .futer-right {
+    margin-right: 93px;
+    margin-left: 70px;
+  }
 }
 
 .futer-right-title {
@@ -1123,6 +1252,12 @@ body {
   color: var(--title-white-color);
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .futer-right-title {
+    text-align: center;
+  }
 }
 
 .futer-right-list {
@@ -1176,9 +1311,5 @@ body {
 
 .futer-right-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.futer-right {
-  margin-right: 93px;
 }
 /*# sourceMappingURL=main.css.map */
