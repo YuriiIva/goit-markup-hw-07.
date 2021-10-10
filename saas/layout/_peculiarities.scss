@@ -1,5 +1,5 @@
 .peculiarities-list {
-    // display: flex;
+    
     justify-content: center;
     @media screen and (min-width: 768px)  {
       display: flex;
@@ -11,9 +11,7 @@
       }
      }
 
-  // .pecul-item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  
   .pecul-item {
     @media screen and (min-width: 480px) {
       margin-right: 0;
@@ -22,8 +20,6 @@
     }
       @media screen and (min-width: 768px)  {
        flex-basis: calc(100% / 2 - 30px) ;
-      //  &:not(even) {
-      //   margin-right: 30px; 
        margin-left: 30px;
        }
   
